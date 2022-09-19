@@ -91,7 +91,7 @@ func versionMessage() string {
 
 func parseFlags() error {
 	// initial default conf
-	gcfg.Root = "../storage/shared/neon"
+	gcfg.Root = "../../storage/shared/neon"
 	gcfg.Port = 8000
 	gcfg.Addr = ""
 	gcfg.Theme = "green"
