@@ -91,13 +91,13 @@ func versionMessage() string {
 
 func parseFlags() error {
 	// initial default conf
-	gcfg.Root = "./"
+	gcfg.Root = "../storage/shared/neon"
 	gcfg.Port = 8000
 	gcfg.Addr = ""
-	gcfg.Theme = "black"
+	gcfg.Theme = "green"
 	gcfg.PlistProxy = defaultPlistProxy
 	gcfg.Auth.OpenID = defaultOpenID
-	gcfg.GoogleTrackerID = "UA-81205425-2"
+
 	gcfg.Title = "Go HTTP File Server"
 
 	kingpin.HelpFlag.Short('h')
