@@ -181,9 +181,6 @@ func main() {
 		u.Scheme = "https"
 		ss.PlistProxy = u.String()
 	}
-	if ss.PlistProxy != "" {
-		log.Printf("plistproxy: %s", strconv.Quote(ss.PlistProxy))
-	}
 
 	var hdlr http.Handler = ss
 
